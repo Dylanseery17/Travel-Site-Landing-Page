@@ -1,0 +1,48 @@
+body {
+  font: 16px 'Roboto Condensed', sans-serif;
+}
+
+.navbar{
+  padding:20px;
+  padding-left:50px;
+}
+
+.bg-dark {
+    background-color: transparent !important;
+}
+
+#Landing{
+    background-image: url("../images/Landing.png");
+    background-repeat: no-repeat !important;
+    margin-top: -80px;
+}
+
+#Landing .col-md {
+  margin-top: 125px;
+  color:white;
+  padding: 10px;
+}
+
+#deals .col-md{
+  margin-top:60px;
+}
+
+#firstcol h1{
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#firstcol #one{
+  margin-top:105px;
+}
+
+@media only screen and (max-width: 766px) {
+  #firstcol {
+    visibility: hidden;
+    margin-top: 0px;
+    height: 125px;
+  }
+  #Landing .col-md {
+    margin-top: 0px;
+  }
+}
