@@ -14,6 +14,7 @@ body {
 #Landing{
     background-image: url("../images/Landing.png");
     background-repeat: no-repeat !important;
+    background-size: cover;
     margin-top: -80px;
 }
 
@@ -33,8 +34,39 @@ body {
 }
 
 #firstcol #one{
-  margin-top:105px;
+  margin-top:75px;
 }
+
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
+
+.jumbotron {
+  background: linear-gradient(327deg, #138496, #ffffff) !important;
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 13s ease infinite;
+  -moz-animation: AnimationName 13s ease infinite;
+  animation: AnimationName 13s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+}
+
 
 @media only screen and (max-width: 766px) {
   #firstcol {
@@ -44,5 +76,19 @@ body {
   }
   #Landing .col-md {
     margin-top: 0px;
+  }
+  #carousel{
+    visibility: hidden;
+    height:20px;
+  }
+  #citypics{
+    visibility: hidden;
+    height: 5px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  #Landing{
+    background-size: auto;
   }
 }
